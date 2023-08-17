@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    body {
+        @apply bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-gray-300;
+    }
+
+    main {
+        @apply container max-w-screen-lg mx-auto py-12 px-4;
+    }
+
+    section {
+        @apply py-16;
+    }
+
+    section:not(:first-child) {
+        @apply border-t border-t-white dark:border-t-gray-800;
+    }
+
+    section:not(:last-child) {
+        @apply border-b border-b-gray-400 dark:border-b-gray-950;
+    }
+
+    section > img {
+        @apply shadow-xl h-auto w-full rounded;
+    }
+
+    p {
+        @apply pb-4;
+    }
+
+    h2 {
+        @apply font-light text-4xl pb-6 dark:text-white text-gray-950;
+    }
+
+    .navbar {
+        @apply fixed w-full bg-gray-200 dark:bg-gray-900 border-b border-b-white dark:border-b-gray-800;
+    }
+
+    .navbar-container {
+        @apply container max-w-screen-lg mx-auto flex items-center justify-between p-4;
+    }
+
+    .logo {
+        @apply flex-none z-50 dark:font-light tracking-wide text-xl lg:text-2xl dark:text-white text-gray-950;
+    }
+
+    .navbar-menu {
+        @apply absolute inset-0 h-0 w-full overflow-hidden bg-white dark:bg-gray-950 transition-height duration-500
+        lg:relative lg:h-auto lg:w-auto lg:bg-transparent;
+    }
+
+    .menu-items {
+        @apply flex flex-col items-center justify-center h-full text-4xl lg:flex-row lg:text-lg;
+    }
+
+    .menu-items li {
+        @apply block w-full py-6 px-12 lg:px-6 lg:py-0;
+    }
+
+    .menu-items a {
+        @apply block dark:text-gray-400 text-gray-600 dark:hover:text-white hover:text-black transition duration-300;
+    }
+}
