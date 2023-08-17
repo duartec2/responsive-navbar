@@ -61,6 +61,6 @@
     }
 
     .menu-items a {
-        @apply block dark:text-gray-400 text-gray-600 dark:hover:text-white hover:text-black transition duration-300;
+        @apply block dark:text-gray-400 text-gray-600 dark:hover:text-white hover:text-black transition duration-300 whitespace-nowrap;
     }
 }
